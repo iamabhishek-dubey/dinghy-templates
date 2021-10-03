@@ -1,0 +1,22 @@
+{
+  "application": "dinghy",
+  "variables": {
+    "WaitTime1": 60,
+    "WaitTime2": 60,
+    "limit": 1
+  },
+  "pipelines": [
+    {
+      "application": "dinghy",
+      "keepWaitingPipelines": false,
+      "name": "Simple",
+      "stages": [
+          {
+            "name": "one",
+            "type": "wait",
+            "waitTime": 10
+          }
+      ]
+    }
+  ]
+}
